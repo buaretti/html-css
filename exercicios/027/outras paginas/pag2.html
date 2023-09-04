@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+            color: white;
+        }
+
+        table{
+            border-collapse: collapse;
+
+        }
+
+        table{
+            width: 400px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: rgba(0, 0, 0, 0.437);
+        }
+    </style>
+</head>
+<body>
+    <h1>Segunda Página</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Ana Paula</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Secretária</td>
+            </tr>
+            <tr>
+                <td>Pedro Luís</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Empresário</td>
+            </tr>
+            <tr>
+                <td>João Marcelo</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Atleta</td>
+            </tr>
+            <tr>
+                <td>Ricardo Almeida</td>
+                <td>M</td>
+                <td>51</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Raquel Miranda</td>
+                <td>F</td>
+                <td>45</td>
+                <td>Juíza</td>
+            </tr>
+            <tr>
+                <td>Lavínia Gomes</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Bancária</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
