@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">    
+        <p>
+            <label for="ano">Ano de Nascimento:</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2020" oninput="idadecalc()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </p>
+        <script>
+            function idadecalc(){
+                var anoatual = new Date().getFullYear()
+                var anonasc = document.getElementById("ano")
+                
+                idade.innerHTML = Number(anoatual) - Number(anonasc.value) 
+            }
+        </script>
+    </form>
+</body>
+</html>
